@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:marketplace_concept/src/config/app_colors.dart';
 import 'package:marketplace_concept/src/presentation/widget/appbar/app_bar_icons.dart';
 import 'package:marketplace_concept/src/utils/helper_functions.dart';
 
@@ -13,15 +12,15 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.appGrey,
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      color: Colors.transparent,
+      // padding: const EdgeInsets.symmetric(horizontal: 20.0),
       height: height * .1,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(vertical: 15),
+            // padding: const EdgeInsets.symmetric(vertical: 15),
             width: width * .65,
             child: TextFormField(
               decoration: InputDecoration(

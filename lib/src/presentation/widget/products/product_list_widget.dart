@@ -44,7 +44,7 @@ class ProductListWidget extends StatelessWidget {
                     splashColor: Colors.black,
                     onTap: () => Get.to(() => const ProductItemScreen(),
                         duration: const Duration(seconds: 1),
-                        transition: Transition.leftToRight),
+                        transition: Transition.downToUp),
                     child: Ink(
                       width: width * .43,
                       height: height * .3,

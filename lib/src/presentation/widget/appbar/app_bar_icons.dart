@@ -21,15 +21,15 @@ class AppBarIcons extends StatelessWidget {
           Center(
             child: IconButton(
                 onPressed: () {},
-                icon: Icon(iconData, size: widthFactor * .45, color: color.withOpacity(.5))),
+                icon: Icon(iconData, size: widthFactor * .45, color: color == AppColors.primaryColor ? color.withOpacity(.5) : color)),
           ),
           if(data != "")
             Positioned(
               right: 0,
-              top: 2,
+              top: 10,
               child: Container(
-                width: widthFactor * .35,
-                height: heightFactor * .32,
+                width: widthFactor * .36,
+                height: heightFactor * .30,
                 decoration: const BoxDecoration(
                     color: Colors.pinkAccent,
                     borderRadius: BorderRadius.all(Radius.circular(5))),

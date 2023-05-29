@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
             // disableCenter: true,
             // enlargeFactor: 2,
             // height: height * .23,
-            aspectRatio: 2.2,
+            aspectRatio: 2,
             // enlargeCenterPage: true,
             onPageChanged: (index, reason) {
               // setState(() {

@@ -14,7 +14,7 @@ class ProductItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    double itemHeight = height * .3;
+    double itemHeight = height * .28;
     double itemWidth = width * .43;
 
     return Container(
