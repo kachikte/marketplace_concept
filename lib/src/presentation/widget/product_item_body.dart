@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_concept/src/config/app_colors.dart';
 import 'package:marketplace_concept/src/presentation/widget/item_description_widget.dart';
+import 'package:marketplace_concept/src/presentation/widget/rating_widget.dart';
+import 'package:marketplace_concept/src/presentation/widget/similar_images_widget.dart';
 
 class ProductItemBody extends StatelessWidget {
 
@@ -89,7 +91,9 @@ class ProductItemBody extends StatelessWidget {
                     width: width * .9,
                     child: Divider(color: Colors.black.withOpacity(.2))
                 ),
-                ItemDescriptionWidget(height: height, width: width)
+                ItemDescriptionWidget(height: height, width: width),
+                RatingWidget(height: height, width: width),
+                SimilarImagesWidget(height: height, width: width)
               ],
             ),
           ),

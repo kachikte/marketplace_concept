@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:marketplace_concept/src/config/app_routes.dart';
 import 'package:marketplace_concept/src/presentation/screen/product_item_screen.dart';
 import 'package:marketplace_concept/src/presentation/widget/products/product_item_widget.dart';
 

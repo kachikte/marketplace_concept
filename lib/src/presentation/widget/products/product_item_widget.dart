@@ -30,9 +30,9 @@ class ProductItemWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(imageUrl, fit: BoxFit.fill, width: itemWidth, height: itemHeight/2),
+              Image.asset(imageUrl, fit: BoxFit.fill, width: itemWidth, height: height * .142),
               Container(
-                height: (itemHeight)/2 * .86,
+                height: height * .135,
                 color: index == 0 ? Colors.white : Colors.transparent,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

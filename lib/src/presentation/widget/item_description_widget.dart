@@ -29,7 +29,7 @@ class ItemDescriptionWidget extends StatelessWidget {
     }
 
     return SizedBox(
-      height: height,
+      height: height * .75,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
