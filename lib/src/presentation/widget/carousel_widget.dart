@@ -45,9 +45,9 @@ class CarouselWidget extends StatelessWidget {
                             fontSize: height * .04,
                             fontWeight: FontWeight.bold)),
                     SizedBox(height: height * .003),
-                    const Text(
+                    Text(
                       "Discover fashion that suits your style",
-                      style: TextStyle(fontSize: 10),
+                      style: TextStyle(fontSize: 10, color: AppColors.primaryColor.withOpacity(.3)),
                     ),
                     SizedBox(height: height * .003),
                     const AppButton(),
@@ -74,7 +74,7 @@ class CarouselWidget extends StatelessWidget {
                 ),
               ),
             ],
-          ),
+          )
         ],
       ),
     );

@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     const Text("Best Sale Product",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18)),
+                            fontWeight: FontWeight.w700, fontSize: 18)),
                     Text("See more",
                         style:
                             TextStyle(fontSize: 14, color: AppColors.appGreen)),

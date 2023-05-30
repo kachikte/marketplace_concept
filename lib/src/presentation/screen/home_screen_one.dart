@@ -46,7 +46,7 @@ class HomeScreenOne extends StatelessWidget {
           pinned: true,
           floating: false,
           elevation: 0,
-          expandedHeight: height * .33,
+          expandedHeight: height * .34,
           toolbarHeight: height * .1,
           title: CustomAppBar(height: height, width: width),
           flexibleSpace: FlexibleSpaceBar(
