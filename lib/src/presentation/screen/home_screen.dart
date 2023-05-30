@@ -38,52 +38,67 @@ class HomeScreen extends StatelessWidget {
           index: 3)
     ];
 
-    return SingleChildScrollView(
-        child: Column(
-      children: [
-        CustomAppBar(height: height, width: width),
-        CarouselSlider(
-          options: CarouselOptions(
-            viewportFraction: 1,
-            autoPlay: true,
-            // disableCenter: true,
-            // enlargeFactor: 2,
-            // height: height * .23,
-            aspectRatio: 2,
-            // enlargeCenterPage: true,
-            onPageChanged: (index, reason) {
-              // setState(() {
-              //   currentIndex = index;
-              // });
-            },
-          ),
-          items: carouselWidgets,
-        ),
-        CategorySection(height: height, width: width),
-        Container(
-          color: AppColors.appGrey,
-          child: Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 20),
-                height: height * .08,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("Best Sale Product",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w700, fontSize: 18)),
-                    Text("See more",
-                        style:
-                            TextStyle(fontSize: 14, color: AppColors.appGreen)),
-                  ],
-                ),
+    return CustomScrollView(
+      slivers: [
+        SliverAppBar(
+          backgroundColor: Colors.white,
+          collapsedHeight: height * .1,
+          pinned: true,
+          floating: false,
+          elevation: 0,
+          expandedHeight: height * .34,
+          toolbarHeight: height * .1,
+          title: CustomAppBar(height: height, width: width),
+          flexibleSpace: FlexibleSpaceBar(
+            background: CarouselSlider(
+              options: CarouselOptions(
+                viewportFraction: 1,
+                autoPlay: true,
+                aspectRatio: 1,
+                onPageChanged: (index, reason) {
+                },
               ),
-              ProductListWidget(height: height, width: width)
-            ],
+              items: carouselWidgets,
+            ),
           ),
-        )
+        ),
+        SliverList(
+          delegate: SliverChildBuilderDelegate(
+                  (_, int index) {
+                return Column(
+                  children: [
+                    CategorySection(height: height, width: width),
+                    Container(
+                      color: AppColors.appGrey,
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.symmetric(horizontal: 20),
+                            height: height * .08,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text("Best Sale Product",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold, fontSize: 18)),
+                                Text("See more",
+                                    style:
+                                    TextStyle(fontSize: 14, color: AppColors.appGreen)),
+                              ],
+                            ),
+                          ),
+                          ProductListWidget(height: height, width: width)
+                        ],
+                      ),
+                    )
+                  ],
+                );
+              },
+              childCount: 1
+          ),
+        ),
       ],
-    ));
+    );
+
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_concept/src/config/app_colors.dart';
 
 import 'home_screen.dart';
-import 'home_screen_one.dart';
 
 class GeneralScreen extends StatefulWidget {
   const GeneralScreen({Key? key}) : super(key: key);
@@ -14,10 +13,10 @@ class GeneralScreen extends StatefulWidget {
 class _GeneralScreenState extends State<GeneralScreen> {
 
   final List<Widget> _pages = [
-    const HomeScreenOne(),
-    const HomeScreenOne(),
-    const HomeScreenOne(),
-    const HomeScreenOne()
+    const HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen()
   ];
   int _selectedIndex = 0;
 

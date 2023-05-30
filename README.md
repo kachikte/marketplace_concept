@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 - Clone the repository
-- checkout to the home-product branch and pull it
+- checkout to the final-product branch and pull it
 - run - flutter clean
 - run - flutter pub get (to get dependencies in the pubspec.yaml file)
 - run - flutter run (to build the app)
